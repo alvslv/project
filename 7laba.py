@@ -36,7 +36,7 @@ def max_subarray_sum(arr):
     for i in range(1, len(arr)):
         # Что выгоднее: начать новый подмассив или продолжить старый?
         current_sum = max(arr[i], current_sum + arr[i])
-        # Обновляем максимум
+        # Обновляем максимум!
         max_sum = max(max_sum, current_sum)
 
     return max_sum
